@@ -49,9 +49,9 @@ function handlechange(event){
     <div className="min-h-screen bg-[#000000] w-[100%] h-[100%]">
       
       <h1 className="text-3xl text-center pt-6 font-serif">
-        <font color="#1DA1F2">Twitter Feed </font>
-        <font color="#ffffff" >for</font>
-        <font color="#ff6314"> Redditors</font>
+        <font color="#1DA1F2">Twitter </font>
+        <font color="#ffffff" >Feed </font>
+        <font color="#ff6314">Sorter</font>
       </h1>
       <h4 className="text-center mt-10 text-xl mt-20 mb-3 text-[#ff6314]">Please Enter the Username </h4>
 
