@@ -1,25 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from "./pages/main"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Feed from "./pages/feed.js"
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App(){
+
+    const[tweetArray, setTweetArray] = React.useState(
+        () => JSON.parse(localStorage.getItem("tweetArray")) || [])
+
+
+    React.useEffect(() => {
+        localStorage.setItem("tweetArray", JSON.stringify(tweetArray))
+    }, [tweetArray])
+
+
+
+
+
+
+
+    return (
+    <div>
+        <Router>
+            <Routes>
+               <Route 
+               path='/' 
+               element={
+               <Main 
+               setTweetArray={setTweetArray} 
+               tweetArray={tweetArray}
+               />} 
+               />
+               <Route 
+               path='/feed/:pages' 
+               element={
+               <Feed 
+                setTweetArray={setTweetArray} 
+                tweetArray={tweetArray}
+                />} 
+               />
+
+            </Routes>
+            </Router>
+        
     </div>
-  );
+    )
 }
 
-export default App;
+
+
+
