@@ -14,6 +14,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
+    "react-app-rewired": "^2.2.1",
     "react-twitter-widgets": "^1.11.0",
     "twitter": "^1.7.1",
     "web-vitals": "^2.1.4"
@@ -53,7 +54,7 @@
     "os-browserify": "^0.3.0",
     "postcss": "^8.4.14",
     "process": "^0.11.10",
-    "react-app-rewired": "^2.2.1",
+    
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "tailwindcss": "^3.1.5",
