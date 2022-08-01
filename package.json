@@ -42,7 +42,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "install-server": "cd server && npm install && cd ..",
-    "heroku-postbuild":"cd server && npm run start"
+    "heroku-postbuild":"react-app-rewired build && cd server && npm run start"
   },
   "eslintConfig": {
     "extends": [
