@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #dev
-index.js
+# index.js
 node_modules
