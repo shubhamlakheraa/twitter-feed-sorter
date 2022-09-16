@@ -19,7 +19,7 @@ function handlechange(event){
     const nav = useNavigate();
 
     const onsearch = () => {
-      Axios.post("/", {
+      Axios.post("http://localhost:3001/", {
         username: usernamereg,
         query : queryreg,
       }) 
